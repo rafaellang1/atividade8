@@ -4,8 +4,9 @@ function calcularIMC() {
     const peso = document.querySelector("#peso").value;
     const altura = document.querySelector("#altura").value/100;
     const result = document.querySelector("#result");
+    const resultMessage = document.querySelector("#resultMessage");
 
-    if(altura !== "" && peso !== ""){
+    if(altura != "" && peso != ""){
         let imc = (peso / (altura * altura)).toFixed(2);
         let mensagem = "";
 
@@ -22,7 +23,8 @@ function calcularIMC() {
         } else {
             mensagem = "CUIDADO!!!, obesidade grau III, procure imediatamente um médico"
         }
-        result.textContent = `Seu IMC é ${imc}! ${mensagem}`;
+        result.textContent = `Seu IMC é ${imc}!`;
+        resultMessage.textContent = `${mensagem}`;
     } else {
         result.textContent = "Por favor preencha todos os campos";
     }

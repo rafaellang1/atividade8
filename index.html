@@ -8,20 +8,22 @@
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
-
-    <form id="formulario">
-        <label for="peso">Peso</label>
-        <input type="number" name="peso" id="peso" placeholder="Informe seu peso atual">
-
-        <label for="altura">altura</label>
-        <input type="number" name="altura" id="altura" placeholder="informe sua altura atual (cm)">
-
-        <label for="IMC">Valor IMC</label>
-        <input type="button" id="btn" value="calcular">
-
-        <div id="result"></div>
-    </form>
+    <main>
+        <div class="calculadora">
+            <h1>Calculadora de IMC</h1>
+            <form id="formulario">
+                <label for="peso" class="peso">Peso</label>
+                <input type="number" name="peso" id="peso" placeholder="Informe seu peso atual">
+                <label for="altura" class="altura">altura</label>
+                <input type="number" name="altura" id="altura" placeholder="informe sua altura atual (cm)">
+                <label for="IMC" class="imc">Valor IMC</label>
+                <input type="button" id="btn" value="calcular">
+                <div id="result"></div>
+                <div id="resultMessage"></div>
+            </form>
+        </div>
+    </main>
+    
 
     <script src="index.js"></script>
 </body>
